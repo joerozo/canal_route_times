@@ -55,12 +55,14 @@ for filename in os.listdir(os.getcwd()):
 # print(len([name for name in os.listdir(current_dir) if os.path.isfile(os.path.join(current_dir, name))]))
 
 # the following lines just connect to the directory that holds the csv's
-desktop = os.path.join(os.path.expanduser("~"), "Desktop", "csv")
+desktop = os.path.join(os.path.expanduser("~"), "Documents", "canal_routes", "canal_route_times", "csv")
 os.chdir(desktop)
 print(os.getcwd())
 
 
-csv_files = os.listdir()
+csv_files = os.listdir(desktop)
+
+print(csv_files)
 number_of_csvs = len(csv_files)
 print(csv_files)
 
